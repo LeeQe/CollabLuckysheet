@@ -16,7 +16,7 @@ Luckysheet 官方只提供了支持协同编辑的一系列接口，并没有提
 
 下载 [**MongoDB Community**](https://www.mongodb.com/docs/manual/administration/install-community/#std-label-install-mdb-community-edition)
 
-关于配置 MongoDB 有很多教程可供参考，需要注意的是，MongoDB大概第6版之后，它的安装包不在附带 MongoDB Shell，需要单独下载安装。
+关于配置 MongoDB 有很多教程可供参考，需要注意的是，MongoDB大概第6版之后，它的安装包不再附带 MongoDB Shell，需要单独下载安装。
 
 下载 [**MongoDB Shell**](https://www.mongodb.com/try/download/shell)
 
