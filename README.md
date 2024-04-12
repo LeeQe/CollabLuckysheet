@@ -6,7 +6,7 @@ Luckysheet 官方只提供了支持协同编辑的一系列接口，并没有提
 
 本项目为前后端一体，技术栈如下：
 
-> * 框架：SpringBoot + Vue + FreeMarker
+> * 框架/库：SpringBoot + Vue + FreeMarker
 > * 数据库：MongoDB 7.0.8
 > * 前端核心：Luckysheet
 
