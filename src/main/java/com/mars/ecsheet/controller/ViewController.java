@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * 在普通Controller中，如果不在响应方法上加上@ResponseBody，那么默认返回的是一个页面
+ * 页面加载请求
  */
 @Controller
 public class ViewController {
@@ -38,7 +38,6 @@ public class ViewController {
     public ModelAndView index() {
         List<WorkBookEntity> all = workBookRepository.findAll();
 
-        // 返回静态资源的根页面。对于返回页面的请求，比较规范的做法是单独写一个controller
         return new ModelAndView("index", "all", all);
     }
 
@@ -62,7 +61,7 @@ public class ViewController {
 
 
     /**
-     * 根据id查询表格，并进入协同编辑页
+     * 根据id查询表格，并进入协同编辑
      * @param wbId 工作表id
      * @return 表格协同页面
      */

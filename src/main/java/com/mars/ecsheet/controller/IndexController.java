@@ -14,8 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 在@RestController风格的Controller中，也可以通过ModelAndView返回页面。
- * 但是比较规范的写法依然是将返回页面的请求单独写在一个Controller中。
  * @author Mars
  * @date 2020/10/28
  * @description 表格数据加载相关请求
@@ -26,7 +24,11 @@ public class IndexController {
     @Autowired
     private WorkSheetRepository workSheetRepository;
 
-
+    /**
+     * 根据表格id加载表格信息
+     * @param wbId 表格id
+     * @return 表格信息
+     */
     @PostMapping("/load/{wbId}")
     public String load(@PathVariable(value = "wbId") String wbId) {
 
@@ -41,6 +43,11 @@ public class IndexController {
     }
 
 
+    /**
+     * 根据表格id加载表格sheet页信息
+     * @param wbId 表格id
+     * @return sheet页信息
+     */
     @PostMapping("/loadSheet/{wbId}")
     public String loadSheet(@PathVariable(value = "wbId") String wbId) {
         List<WorkSheetEntity> wsList = workSheetRepository.findAllBywbId(wbId);
