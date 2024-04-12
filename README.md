@@ -22,7 +22,7 @@ Luckysheet 官方只提供了支持协同编辑的一系列接口，并没有提
 
 ## 启动项目
 
-第一次启动项目后，会在指定的数据库中创建两个集合：workbook 和 worksheet。workbook 对应一个电子表格，worksheet 保存的是所有表格的 sheet 信息。
+第一次启动项目后，会在指定的数据库中创建两个集合：workbook 和 worksheet。workbook 保存表格的部分数据，worksheet 保存的是所有表格的 sheet 数据。
 
 成功启动项目后，访问 **localhost:9999** 即可。
 
