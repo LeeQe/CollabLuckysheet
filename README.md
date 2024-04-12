@@ -10,5 +10,7 @@
 
 需要在本地安装好 MongoDB 数据库，然后在配置文件里配置数据库路径。
 
+成功启动项目后，访问 **localhost:9999** 即可。
+
 ### [友情链接：Luckysheet](https://github.com/mengshukeji/Luckysheet)
 
